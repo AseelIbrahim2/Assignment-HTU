@@ -1,0 +1,18 @@
+.text{
+    
+    color : #00f ;
+ 
+}
+h1{
+   color:#000000;
+}
+
+#green{
+    color:#009900 ;
+}
+body{
+    background-image: url("media/img3.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
