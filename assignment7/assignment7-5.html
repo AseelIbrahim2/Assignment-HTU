@@ -1,0 +1,87 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+  <head> 
+    <meta charset="UTF-8" /> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+    <title>Form </title> 
+  </head> 
+  <body> 
+    <form> 
+      <label for="firstName">First Name : </label> 
+      <br /> 
+      <input 
+        type="text" 
+        name="FirstName" 
+        id="firstName" 
+        placeholder="Please Enter Your First Name" 
+        required 
+        maxlength="16"
+        minlength="3"
+      /> 
+      <br /> 
+      <br /> 
+      <label for="lastName">Last Name : </label> 
+      <br /> 
+      <input 
+        type="text" 
+        name="LastName" 
+        id="lastName" 
+        placeholder="Please Enter Your Last Name" 
+        required 
+        maxlength="16"
+        minlength="3"
+      /> 
+      <!-- the value in the for must be the same as the value of the id  --> 
+      <br /> 
+      <br /> 
+      
+      <label for="Age">Age : </label> 
+      <br /> 
+      <input 
+        type="number" 
+        name="Age" 
+        id="Age" 
+        placeholder="Please Enter Your Age" 
+        required 
+        max="3"
+        min="2"
+      /> 
+      <!-- the value in the for must be the same as the value of the id  --> 
+      <br /> 
+      <br /> 
+      <label for="email">Email : </label> 
+      <br /> 
+      <input 
+        type="email" 
+        name="Email" 
+        id="email" 
+        placeholder="Please Enter Your Email" 
+        required 
+      /> 
+      <br> <br>  
+      <label for="password">Password:</label> 
+      <br> 
+      <input type="password" name="Password"  placeholder="Please Enter Your Password" 
+      required > 
+<br> <br>
+<label for="Datetime">Datetime:</label> 
+      <br> 
+      <input type="datetime" name="Datetime"  placeholder="Please Enter Your Datetime" 
+      required > 
+      <br><br>
+      <label for="Birthdate">Birthdate:</label> 
+      <br> 
+      <input type="date" name="Birthdate"  placeholder="Please Enter Your Birthdate" 
+      required > 
+      <br><br>
+      <label for="Datetime">Datetime:</label> 
+      <br> 
+      <input type="datetime-local" name="Datetime"  placeholder="Please Enter Your Datetime" 
+      required >  
+      <br><br>
+<br> 
+      <input type="submit" /> 
+    </form> 
+     
+  </body> 
+</html>
