@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <form>
+    <label for="firstName">First Name:</label>
+    <br>
+    <input type="text" id="firstName" name="firstName" maxlength="16" placeholder="Please Enter Your First Name"  required />
+    <br><br>
+    <label for="secondName">Second Name:</label>
+    <br>
+    <input type="text" id="secondName" name="secondName" maxlength="16" placeholder="Please Enter Your second Name"  />
+    <br><br>
+    <label for="lastName">last Name:</label>
+    <br>
+    <input type="text" id="lastName" name="lastName" maxlength="16" placeholder="Please Enter Your Last Name"  required />
+    <br><br>
+    <label for="age">Age:</label>
+    <br>
+    <input type="number" id="age" name="age"  placeholder="Please Enter Your age" />
+    <br><br>
+    <label for="Birthdate">Birthdate:</label>
+    <br>
+    <input type="date" id="Birthdate" name="Birthdate" max="2025-02-03" required  />
+    <br><br>
+     
+    <label for="password">Password:</label> 
+    <br> 
+    <input type="password" name="Password"  placeholder="Please Enter Your Password" minlength="8"  required >
+    <br /> 
+    <br /> 
+    <label for="email">Email : </label> 
+    <br /> 
+    <input 
+      type="email" 
+      name="Email" 
+      id="email" 
+      placeholder="Please Enter Your Email" 
+      required 
+    /> 
+    <br> <br> 
+    <label for="Gender">Gender : </label> <br>
+    <input type="radio"
+    name="Gender"
+    id="Gender" value="1"/>Male<br>
+    <input type="radio"
+    name="Gender"
+    id="Gender" value="0" checked/>Female<br><BR>
+    <label for="Skills">Skills : </label> <br>
+    <input type="checkbox" id="skill1" checked> <label for="skill1"> HTML</label><br>
+    <input type="checkbox" id="skill2" checked> <label for="skill2">CSS</label><br>
+    <input type="checkbox" id="skill3"> <label for="skill3">PHP</label><br>
+    <input type="checkbox" id="skill4"> <label for="skill4">Java</label><br>
+    <input type="checkbox" id="skill5"> <label for="skill5">SQL</label><br>
+    <input type="checkbox" id="skill6"> <label for="skill6">C#</label><br>
+    <br>
+    <select name="country" id="country" multiple>
+        <option value="Jordan">Jordan</option>
+        <option value="Egypt">Egypt</option>  
+        <option value="Saudi Arabia">Saudi Arabia</option>  
+        <option value="United Arab Emirates">United Arab Emirates</option>  
+        <option value="Lebanon">Lebanon</option>  
+        <option value="Morocco">Morocco</option>  
+
+    </select><br><br>
+    <input type="text" list="country" name="country">
+    <datalist id="country" >
+        <option value="Jordan">Jordan</option>
+        <option value="Egypt">Egypt</option>  
+        <option value="Saudi Arabia">Saudi Arabia</option>  
+        <option value="United Arab Emirates">United Arab Emirates</option>  
+        <option value="Lebanon">Lebanon</option>  
+        <option value="Morocco">Morocco</option>  
+    </datalist>
+    <br><br>
+    <input type="submit" value="creat user"  />
+
+ </form>   
+</body>
+</html>
