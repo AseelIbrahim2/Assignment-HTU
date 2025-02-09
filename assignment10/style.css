@@ -1,0 +1,19 @@
+.p1 {
+    border-color:  black;
+    border-style: solid ;
+      
+   }
+.p2{
+    border-color:  black;
+    border-style: solid ;
+    margin-top: 10px ;
+    margin-bottom: 0px;
+
+}   
+.p3{
+    border-color:  black;
+    border-style: solid ;
+    margin-top: 0;
+    padding: 10px;
+
+}   

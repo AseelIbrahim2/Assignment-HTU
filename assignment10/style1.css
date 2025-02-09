@@ -1,0 +1,20 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.c1{
+   width: 40%;
+   border-style: solid;
+   d
+}
+.c2{
+  width: 60%;
+  border-style: solid;
+  
+}
+.c3{
+    border-style: solid;
+    height: 100vh;
+    display: flex;
+}
