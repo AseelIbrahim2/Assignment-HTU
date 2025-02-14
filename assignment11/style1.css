@@ -1,0 +1,30 @@
+.nav{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: black;
+    flex-wrap: wrap;
+  
+}
+.nav,a{
+    color: white;
+    text-decoration: none;
+    padding: 20px;
+}
+
+
+
+.button {
+    border: 1px solid rgb(2, 2, 2);
+    border-radius:15px;
+    padding:10px;
+    color: black;
+    background-color: white;
+}
+.button:hover{
+    color: rgb(241, 236, 236);
+    text-decoration: none;
+    background-color: rgb(37, 36, 36);
+
+}
