@@ -1,0 +1,223 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.flex-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+    
+  }
+  .flex-column {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .sections{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    height: 100vh;
+    width: 100wh;
+    gap: 0;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .sidebar{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin-left:0px ;
+    height: 100vh;
+    width: 3vw;
+    background-color: rgb(243, 240, 234);
+  }
+  .message{
+    height: 100vh;
+    border: 0.5px solid rgb(218, 212, 212);
+    border-top-left-radius: 15px;
+    width: 25vw;
+    
+  }
+  .chat{  
+    height: 100vh;
+    border: 0.5px solid rgb(218, 212, 212);
+    width: 70vw;
+    
+  }
+  .mnav{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 15px;
+  }
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .icon {
+    width: 15px;
+    height: 15px;
+    object-fit: cover;
+  }
+  .personal-img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+  }
+  .search {
+    border: 1px solid rgb(228, 225, 225);
+    border-radius: 5px;
+    width: 20vw;
+    font-size: 16px;
+    height: 30px;
+    margin-bottom: 5px ;
+  }
+  .messagbox{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: auto;
+    display: block;
+    width: 25vw; 
+    height: 85vh;
+   
+  }
+  .messagboxitem{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 23vw; 
+    height: 60px;
+    border-radius: 10px;
+    padding: 10px;
+    gap: 10px;
+  }
+  .left{
+    padding-right: 12px;
+    padding-left: 12px;
+    justify-content: end;
+    
+}
+ 
+.right i{
+    float: right;
+}
+  .messagboxitem:hover{
+    background-color:  rgb(228, 225, 225) ;
+    border:1px solid rgb(228, 225, 225) ;
+  }
+  .notfication{
+    float: right;
+    background-color: green;
+    border: 0.5 solid green;
+    color:white;
+    border-radius: 50%;
+    padding: 6px;
+    font-size:xx-small;
+  }
+  .right {
+    float: right;
+}
+.name{
+  font-size: large;
+  font-weight: bold;
+}
+  .chatnav{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start; 
+    padding: 15px;
+    gap: 10px;
+    border:1px solid rgb(228, 225, 225) ;
+
+  }
+  .chatbox{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 89%; 
+    background-image: url("media/background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    gap:5px;
+    
+  }
+  .mass{
+    overflow: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 80vh; 
+    gap:5px;
+    display: block;
+    
+
+  }
+  .chatmass{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%; 
+    height: 50px; 
+    border: 1px solid #cecaca; 
+    background-color: rgb(204, 200, 200);
+    box-shadow: 0 4px 6px rgba(48, 48, 48, 0.1); 
+  }
+  .chatmass textarea {
+    margin-bottom: 0px ;
+    width: 90%; 
+    height: 40px; 
+    font-size: 16px;
+    border: 1px solid #cecaca; 
+    resize: none; 
+    box-shadow: 0 4px 6px rgba(48, 48, 48, 0.1); 
+    border-radius: 25px;
+  }
+  .text2{
+    width:500px ;
+    height: 65px;
+    border-radius: 20px;
+    border: 1px solid  white ;
+    background-color: beige;
+    padding:20px ;
+    
+
+  }
+  .text{
+    width:500px ;
+    height: 65px;
+    border-radius: 20px;
+    border: 1px solid  rgb(176, 194, 174) ;
+    background-color: rgb(202, 226, 194);
+    padding:20px ;
+
+  }
+  .btn{
+    padding: 10px 20px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    
+  }
+
+
+
+
+

@@ -23,7 +23,6 @@ body{
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    
     max-width: 1200px;
 }
 .item {
@@ -101,11 +100,12 @@ nav {
   }
   
   .icon {
-    width: 30px;
-    height: 30px;
+    width: 25px;
+    height: 25px;
     margin-left: 10px;
     border-radius: 50%;
     object-fit: cover;
+
   }
   
   .right-section {
