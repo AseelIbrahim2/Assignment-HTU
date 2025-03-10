@@ -1,0 +1,59 @@
+/*
+div{
+    border: 1px solid black;
+    transform: translate(100px,300px);
+    transform:scale(2,0.5);
+    tranform:rotate(90deg);
+}
+    
+div{
+    border: 1px solid black;
+    transition: all  2s;
+    width: 100px;
+    height: 600px;
+}
+div:hover{
+    width: 300px;
+    height: 900px;
+}  
+
+div{
+    border: 1px solid black;
+    width: 100px;
+    height: 100px;
+    animation: mymove 3s infinite;
+    background-color: grey;
+}
+@keyframes mymove{
+    0%{transform: translate(0,0);}
+    20%{transform: translate(100px,0);}
+    40%{transform: translate(100px,100px);}
+    60%{transform: translate(0,100px);}
+    100%{transform: translate(0,0);}
+}
+   */
+     h1{
+        color: red;
+     }
+
+     
+     .flex{
+        display: flex;
+        flex-direction: row;
+        gap:8px;
+     }
+     .child{
+        flex: 1 1 300px;
+        height: 100px;
+        background-color: aqua;
+     }
+     @media( max-width:320px){
+        .flex{
+            flex-direction: column;
+         }
+     }
+
+       @media(prefers-color-scheme:light){
+        
+     }
+          
