@@ -1,0 +1,26 @@
+div{
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    position: relative;
+    animation: move 3s infinite;
+    border-radius: 50%;
+}
+
+@keyframes move {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(50px); 
+    }
+    50% {
+        transform: translateX(100px); 
+    }
+    75% {
+        transform: translateX(150px); 
+    }
+    100% {
+        transform: translateX(0);
+    }
+}

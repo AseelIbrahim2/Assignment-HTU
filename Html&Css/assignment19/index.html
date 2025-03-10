@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+ 
+     
+    </style>
+</head>
+<body>
+    <div class="parent">
+    <header>
+  <!--           navbar         -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-black">
+    <div class="container-fluid">
+
+        <!-- قائمة "Explore" -->
+        <div class="dropdown">
+            <button class="btn btn-black text-white fw-bold dropdown-toggle" type="button" data-bs-toggle="dropdown">
+                Explore
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Option 1</a></li>
+                <li><a class="dropdown-item" href="#">Option 2</a></li>
+            </ul>
+        </div>
+
+        <!-- حقل البحث -->
+        <input type="text" class="form-control form-control-sm bg-dark text-white border-0 w-auto mx-2" placeholder="Search...">
+
+        <!-- لوجو NASA في المنتصف -->
+        <a class="navbar-brand mx-auto" href="#">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg" alt="NASA Logo" width="50">
+        </a>
+
+        <!-- الروابط على اليمين -->
+        <div class="d-flex">
+            <a class="nav-link text-white fw-bold mx-2" href="#">News & Events</a>
+            <a class="nav-link text-white fw-bold mx-2" href="#">Multimedia</a>
+            <a class="nav-link text-white fw-bold mx-2" href="#">NASA+ 
+                <span class="badge bg-danger">LIVE</span>
+            </a>
+        </div>
+
+    </div>
+</nav>
+  <!--        end     navbar         -->
+ </header>
+ <main>
+ <!--        slide         -->
+ <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100" style="height: 85vh;" src="media/bg.webp" alt="First slide">
+            <div class="carousel-caption d-none d-md-block" style="text-align: left; left: 20px; right: auto;">
+                <h1>Blue Ghost Lands <br> On the Moon </h1>
+                <h5>Carrying Nasa science and technology to the Moon, Firefly Aerospace's lunar lander,<br>
+                Blue Ghost, touched down on the lunar surface at 3:34 AM EST on Sunday, March 2.</h5>
+                <button class="btn btn-danger">Mission Updates</button>
+            </div>
+        </div>
+    </div>
+</div>
+  <!--       end   slide         -->
+<!--       section1          -->
+      
+       <section class="container-fluid  mb-4">
+        <br>
+           <h1 >Featured News</h1>
+            <!--      cards        -->
+           <div class="container mb-3 d-flex gap-4">
+            <div class="row">
+                <div class="col-sm-12 col-lg-6 mb-3">
+                      <div class="card bg-dark text-white border-0">
+                        <img src="media/sec1-p1.webp" height="400px" class="card-img" alt="Stony Beach"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text">3 MIN READ</p>
+                          <h5 class="card-text">NASA Successfully Acquires GPS Signals on Moon.</h5>
+                          
+                        </div>
+                      </div>
+                      
+                
+                </div>
+                <div class="col-sm-12  col-lg-3 mb-3">
+                    <div class="card bg-dark text-white  border-0">
+                        <img src="media/sec2-p2.webp"  height="400px"class="card-img" alt="Stony Beach"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text">5 MIN READ</p>
+                          <h6 class="card-text">NASA Turns Off 2 Voyager Science Instruments to Extend Mission.</h6>
+                          
+                        </div>
+                      </div>
+                </div>
+                <div class="col-sm-12  col-lg-3">
+                <div class="row">
+                    <div class="card text-white mb-3 border-0">
+                        <img src="media/sec1-p3.jpg"  height="190px"class="card-img" alt="Stony Beach"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text">7 MIN READ</p>
+                          <h6 class="card-text">NASA Sets Coverage for Agency's SpaceX Crew-10 Launch, Docking.</h6>
+                          
+                        </div>
+                      </div>
+                </div>
+                <div class="row">
+                    <div class="card  text-white  border-0">
+                        <img src="media/sec1-p4.webp" class="card-img " width="100%" height="190px" alt="Stony Beach"/>
+                        <div class="card-img-overlay d-flex flex-column justify-content-end">
+                          <p class="card-text">3 MIN READ</p>
+                          <h6 class="card-text">FARMing with Data: OpenET Launches new Tool for Farmers and Ranchers.</h6>
+                          
+                        </div>
+                      </div>
+                </div>
+                </div>
+              </div>
+
+           </div>  
+           
+           <!--         end    cards        -->
+
+           <div class="container md-4">
+          <div class="row">
+            <div class="col-lg-3  col-sm-12  d-flex align-items-center">
+              <img src="media/sec1-p5.webp" class="rounded-circle d-inline float-left" width="85 px" height="85px" alt="...">
+              <h6 class="d-inline ms-3">NASA Successfully Acquires GPS Signals on Moon</h6>
+            </div>
+            <div class="col-lg-3  col-sm-12 d-flex align-items-center">
+              <img src="media/sec1-p6.webp" class="rounded-circle d-inline float-left" width="85px" height="85px" alt="...">
+              <h6 class="d-inline ms-3">NASA Successfully Acquires GPS Signals on Moon</h6>
+            </div>
+            <div class="col-lg-3  col-sm-12 d-flex align-items-center">
+              <img src="media/sec1-p7.jpg" class="rounded-circle d-inline float-left" width="85px" height="85px" alt="...">
+              <h6 class="d-inline ms-3">NASA Successfully Acquires GPS Signals on Moon</h6>
+            </div>
+            <div class="col-lg-3 col-sm-12  d-flex align-items-center">
+              <img src="media/sec1-p8.jpg" class="rounded-circle d-inline float-left" width="85px" height="85px" alt="...">
+              <h6 class="d-inline ms-3">NASA Successfully Acquires GPS Signals on Moon</h6>
+            </div>
+        </div>
+
+           
+      </section>
+<!--       end    section1       -->
+
+<!--         section2      -->
+
+ <!--        slide         -->
+ <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img class="d-block w-100" style="height: 85vh;" src="media/bg2.webp" alt="First slide">
+            <div class="carousel-caption d-none d-md-block" style="text-align: left; left: 20px; right: auto;">
+                <h1>Blue Ghost Lands <br> On the Moon </h1>
+                <h5>Carrying Nasa science and technology to the Moon, Firefly Aerospace's lunar lander,<br>
+                Blue Ghost, touched down on the lunar surface at 3:34 AM EST on Sunday, March 2.</h5>
+                <button class="btn btn-danger">Mission Updates</button>
+            </div>
+        </div>
+    </div>
+</div>
+  <!--       end   slide         -->
+
+
+<!--       end    section2      -->
+
+
+<!--       section3      -->
+
+<section class="container-fluid mb-4   " >
+<h1 class="mt-5 mb-5">More NASA Images</h1>
+<div class="container-fluid d-flex gap-2  ">
+  <div class="row mt-5 mb-5">
+    <div class="col-lg-4 col-sm-12">
+      <div class="d-flex flex-row gap-1 ">
+        <img src="media/sec2-p1.webp" width="250px" height="200" class="mb-2">
+        <div class="d-flex gap-1 flex-column ml-2  ">
+          <img src="media/sec3-p2.webp" width="150px" height="98" class="me-2">
+          <img src="media/sec3-p3.webp" width="150px" height="98">
+        </div>
+      </div>
+    </div>
+   <div class="col-lg-4 col-sm-12">
+    <div class="d-flex flex-row gap-1  ">
+      <img src="media/sec3-p4.webp" width="250px" height="200" class="mb-2">
+      <div class="d-flex gap-1 flex-column ml-2  ">
+        <img src="media/sec3-p5.jpg" width="150px" height="98" class="me-2">
+        <img src="media/sec3-p66.jpg" width="150px" height="98">
+      </div>
+    </div>
+
+   </div>
+   <div class="col-lg-4 col-sm-12">
+    <div class="d-flex flex-row gap-1  ">
+      <img src="media/sec3-p7.webp" width="250px" height="200" class="mb-2">
+      <div class="d-flex gap-1 flex-column ml-2 ">
+        <img src="media/sec3-p8.webp" width="150px" height="98" class="me-2">
+        <img src="media/sec3-p6.jpg" width="150px" height="98">
+      </div>
+    </div>
+
+   </div>
+
+  </div>
+</div>
+</section>
+
+<!--       end    section3     -->
+
+<!--          section4    -->
+
+
+<section class="container-fluid bg-black vh-100 mb-5 ">
+<div class="container-fluid ">
+  <div class="row">
+    <div class="col-lg-4 col-sm-12 text-white d-flex flex-column align-items-start justify-content-center ">
+      <p><strong>Featured Video</strong></p>
+      <h4>Paving the Path to Mars</h4>
+      <p>Gateway is central to the NASA-led Artemis missions to return to the Moon for scientific discovery and chart a path for the first human missions to Mars and beyond. The small space station will be a multi-purpose outpost supporting lunar surface missions, science in lunar orbit, and human exploration further into the cosmos.</p>
+  
+      <button class="btn btn-black text-white">Explore Gateway</button>
+    </div>
+    <div class="col-lg-8 col-sm-12  ">
+      <iframe width="800" height="550" src="https://www.youtube.com/embed/hEyLK506WLQ?si=daLvVE3mfVUs3eIK" 
+      title="YouTube video player" frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+       referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </div>
+
+</div>
+</section>
+
+
+
+
+
+
+<!--       end    section4     -->
+
+
+
+
+ <!--       section5        -->
+<section  class="container-fluid mb-5">
+  <div class="container-fluid">
+    <h1>More Topics from NASA</h1><br><br>
+  <div class="row  mb-5">
+    <div class="col-lg-3 col-sm-12">
+      <div class="card bg-dark text-white border-0">
+        <img src="1.webp" height="400px" class="card-img" alt="Stony Beach"/>
+        <div class="card-img-overlay d-flex flex-column justify-content-end">
+          <p class="card-text">3 MIN READ</p>
+          <h5 class="card-text">NASA Successfully Acquires GPS Signals on Moon.</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-sm-12">
+      <div class="card bg-dark text-white border-0">
+        <img src="1.webp" height="400px" class="card-img" alt="Stony Beach"/>
+        <div class="card-img-overlay d-flex flex-column justify-content-end">
+          <p class="card-text">3 MIN READ</p>
+          <h5 class="card-text">NASA Successfully Acquires GPS Signals on Moon.</h5>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-lg-3 col-sm-12">
+      <div class="card bg-dark text-white border-0">
+        <img src="1.webp" height="400px" class="card-img" alt="Stony Beach"/>
+        <div class="card-img-overlay d-flex flex-column justify-content-end">
+          <p class="card-text">3 MIN READ</p>
+          <h5 class="card-text">NASA Successfully Acquires GPS Signals on Moon.</h5>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-lg-3 col-sm-12">
+      <div class="card bg-dark text-white border-0">
+        <img src="1.webp" height="400px" class="card-img" alt="Stony Beach"/>
+        <div class="card-img-overlay d-flex flex-column justify-content-end">
+          <p class="card-text">3 MIN READ</p>
+          <h5 class="card-text">NASA Successfully Acquires GPS Signals on Moon.</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row mb-5">
+    <div class="col-lg-3 col-sm-12">
+      <div class="card bg-dark text-white border-0">
+        <img src="1.webp" height="400px" class="card-img" alt="Stony Beach"/>
+        <div class="card-img-overlay d-flex flex-column justify-content-end">
+          <p class="card-text">3 MIN READ</p>
+          <h5 class="card-text">NASA Successfully Acquires GPS Signals on Moon.</h5>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-sm-12">
+      <div class="card bg-dark text-white border-0">
+        <img src="1.webp" height="400px" class="card-img" alt="Stony Beach"/>
+        <div class="card-img-overlay d-flex flex-column justify-content-end">
+          <p class="card-text">3 MIN READ</p>
+          <h5 class="card-text">NASA Successfully Acquires GPS Signals on Moon.</h5>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-lg-3 col-sm-12">
+      <div class="card bg-dark text-white border-0">
+        <img src="1.webp" height="400px" class="card-img" alt="Stony Beach"/>
+        <div class="card-img-overlay d-flex flex-column justify-content-end">
+          <p class="card-text">3 MIN READ</p>
+          <h5 class="card-text">NASA Successfully Acquires GPS Signals on Moon.</h5>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-lg-3 col-sm-12">
+      <div class="card bg-dark text-white border-0">
+        <img src="1.webp" height="400px" class="card-img" alt="Stony Beach"/>
+        <div class="card-img-overlay d-flex flex-column justify-content-end">
+          <p class="card-text">3 MIN READ</p>
+          <h5 class="card-text">NASA Successfully Acquires GPS Signals on Moon.</h5>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+</section>
+
+
+
+<!--     end    section5         -->
+
+
+
+
+
+
+ </main>
+
+ <!-- Footer -->
+<footer class="bg-black text-white pt-5 pb-4">
+    <div class="container text-md-start text-center">
+      <div class="row">
+        <!-- Left Section -->
+        <div class="col-lg-4 col-md-6 mb-4">
+            <a class="navbar-brand mx-auto" href="#">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e5/NASA_logo.svg" alt="NASA Logo" width="50">
+            </a>
+          <h5 class="fw-bold mt-3">National Aeronautics and Space Administration</h5>
+          <p>
+            NASA explores the unknown in air and space, innovates for the benefit of humanity, and inspires the world through discovery.
+          </p>
+          <a href="#" class="text-white fw-bold">About NASA's Mission</a> <br>
+          <a href="#" class="text-danger fw-bold">Join Us →</a>
+        </div>
+  
+        <!-- Middle Links -->
+        <div class="col-lg-2 col-md-3 mb-4">
+          <h6 class="fw-bold text-uppercase">Home</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">News & Events</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Multimedia</a></li>
+            <li><a href="#" class="text-white text-decoration-none">NASA+ <span class="badge bg-danger">LIVE</span></a></li>
+            <li><a href="#" class="text-white text-decoration-none">Missions</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-lg-2 col-md-3 mb-4">
+          <h6 class="fw-bold text-uppercase">Explore</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">Humans in Space</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Earth & Climate</a></li>
+            <li><a href="#" class="text-white text-decoration-none">The Solar System</a></li>
+            <li><a href="#" class="text-white text-decoration-none">The Universe</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-lg-2 col-md-3 mb-4">
+          <h6 class="fw-bold text-uppercase">Resources</h6>
+          <ul class="list-unstyled">
+            <li><a href="#" class="text-white text-decoration-none">Technology</a></li>
+            <li><a href="#" class="text-white text-decoration-none">Learning</a></li>
+            <li><a href="#" class="text-white text-decoration-none">About NASA</a></li>
+            <li><a href="#" class="text-white text-decoration-none">NASA en Español</a></li>
+          </ul>
+        </div>
+  
+        <!-- Social Media -->
+        <div class="col-lg-2 col-md-3 mb-4">
+          <h6 class="fw-bold text-uppercase">Follow NASA</h6>
+          <div>
+            <a href="#" class="text-white me-2"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="text-white me-2"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="text-white me-2"><i class="fab fa-x-twitter"></i></a>
+            <a href="#" class="text-white me-2"><i class="fab fa-youtube"></i></a>
+          </div>
+          <a href="#" class="text-white d-block mt-2">More NASA Social Accounts</a>
+          <a href="#" class="text-white d-block">NASA Newsletters</a>
+        </div>
+      </div>
+  
+      <!-- Bottom Links -->
+      <div class="text-center border-top border-secondary mt-3 pt-3">
+        <small>
+          <a href="#" class="text-white text-decoration-none me-3">Sitemap</a>
+          <a href="#" class="text-white text-decoration-none me-3">For Media</a>
+          <a href="#" class="text-white text-decoration-none me-3">Privacy Policy</a>
+          <a href="#" class="text-white text-decoration-none me-3">FOIA</a>
+          <a href="#" class="text-white text-decoration-none me-3">No FEAR Act</a>
+          <a href="#" class="text-white text-decoration-none me-3">Budget & Reports</a>
+          <a href="#" class="text-white text-decoration-none me-3">Contact NASA</a>
+        </small>
+      </div>
+  
+      <div class="text-center mt-2">
+        <small>Page Last Updated: <span class="fw-bold text-white">Mar 02, 2025</span> | Page Editor: <span class="fw-bold text-white">Dacia Massengill</span></small> <br>
+        <small>Responsible NASA Official: <span class="fw-bold text-white">Abigail Bowman</span></small>
+      </div>
+    </div>
+  </footer>
+  <!-- Footer -->
+  
+
+</div>
+
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>  
+</body>
+</html>
