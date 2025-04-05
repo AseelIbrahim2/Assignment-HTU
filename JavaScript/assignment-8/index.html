@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="js1.js"></script>
+</head>
+<body>
+    <form onsubmit="return validateForm()">
+        <input 
+            type="text" 
+            id="fullName" 
+            name="fullName" 
+            placeholder="Full Name" 
+        />
+        <p id="fullNameError" class="error" style="color: red"></p>
+
+        <input 
+            type="email" 
+            id="userEmail" 
+            name="userEmail" 
+            placeholder="Email Address" 
+        />
+        <p id="userEmailError" class="error" style="color: red"></p>
+
+        <input 
+            type="password" 
+            id="userPassword" 
+            name="userPassword" 
+            placeholder="Password" 
+        />
+        <p id="userPasswordError" class="error" style="color: red"></p>
+
+        <input 
+            type="password" 
+            id="confirmUserPassword" 
+            name="confirmUserPassword" 
+            placeholder="Confirm Password" 
+        />
+        <p id="confirmUserPasswordError" class="error" style="color: red"></p>
+
+        <button type="submit">Save</button>
+    </form>
+</body>
+</html>
