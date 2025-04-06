@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">                                                   
+  <title>Calculator</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #121212;
+    }
+
+    .calculator {
+      max-width: 450px;
+      margin: 50px auto;
+      padding: 20px;
+      border-radius: 15px;
+      background-color: #1e1e1e;
+      box-shadow: 0 0 15px rgba(255,255,255,0.1);
+    }
+
+    .display {
+      height: 100px;
+      font-size: 2rem;
+      text-align: right;
+      padding: 10px;
+      margin-bottom: 15px;
+      background: #333;
+      color: white;
+      border-radius: 10px;
+    }
+
+    button {
+      font-size: 1.5rem;
+    }
+
+    .btn-gray {
+      background-color: #555;
+      color: white;
+    }
+
+    .btn-gray:hover {
+      background-color: #666;
+    }
+
+    .btn-light-gray {
+      background-color: #777;
+      color: white;
+    }
+
+    .btn-light-gray:hover {
+      background-color: #888;
+    }
+
+    .btn-equal {
+      background-color: #0a0a0a;
+      color: white;
+    }
+
+    .btn-equal:hover {
+      background-color: #212221;
+      color: white;
+    }
+
+    .btn-clear {
+      background-color: #c0392b;
+      color: white;
+    }
+
+    .btn-clear:hover {
+      background-color: #e74c3c;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+
+
+
+<div class="calculator">
+    <div id="display" class="display">0</div>
+    <div class="row g-2">
+      <div class="col-3"><button class="btn btn-clear w-100" onclick="clearDisplay()">C</button></div>
+      <div class="col-3"><button class="btn btn-gray w-100" onclick="deleteLast()">⌫</button></div>
+      <div class="col-3"><button class="btn btn-gray w-100" onclick="divide()">÷</button></div>
+      <div class="col-3"><button class="btn btn-gray w-100" onclick="multiply()">×</button></div>
+  
+      <div class="col-3"><button class="btn btn-light-gray w-100" onclick="insertNumber('7')">7</button></div>
+      <div class="col-3"><button class="btn btn-light-gray w-100" onclick="insertNumber('8')">8</button></div>
+      <div class="col-3"><button class="btn btn-light-gray w-100" onclick="insertNumber('9')">9</button></div>
+      <div class="col-3"><button class="btn btn-gray w-100" onclick="subtract()">−</button></div>
+  
+      <div class="col-3"><button class="btn btn-light-gray w-100" onclick="insertNumber('4')">4</button></div>
+      <div class="col-3"><button class="btn btn-light-gray w-100" onclick="insertNumber('5')">5</button></div>
+      <div class="col-3"><button class="btn btn-light-gray w-100" onclick="insertNumber('6')">6</button></div>
+      <div class="col-3"><button class="btn btn-gray w-100" onclick="add()">+</button></div>
+  
+      <div class="col-3"><button class="btn btn-light-gray w-100" onclick="insertNumber('1')">1</button></div>
+      <div class="col-3"><button class="btn btn-light-gray w-100" onclick="insertNumber('2')">2</button></div>
+      <div class="col-3"><button class="btn btn-light-gray w-100" onclick="insertNumber('3')">3</button></div>
+      <div class="col-3"><button class="btn btn-equal w-100" onclick="calculateResult()">=</button></div>
+  
+      <div class="col-6"><button class="btn btn-light-gray w-100" onclick="insertNumber('0')">0</button></div>
+      <div class="col-6"><button class="btn btn-light-gray w-100" onclick="insertNumber('.')">.</button></div>
+    </div>
+  </div>
+  
+
+<script src="js.js"></script>
+</body>
+</html>
