@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title1 %></title>
+</head>
+<body>
+    <h1><%= title1 %></h1>
+
+    <h2>Seconds passed: <%= seconds %></h2>
+    
+    <% if (seconds % 2 !== 0) { %>
+        <h3>Here are your fruits:</h3>
+        <ul>
+            <% items.forEach(item => { %>
+                <li><%= item %></li>
+            <% }) %>
+        </ul>
+    <% } else { %>
+        <p>No items to display at the moment </p>
+    <% } %>
+    <%- include("footer.ejs") %>
+    
+</body>
+</html>
