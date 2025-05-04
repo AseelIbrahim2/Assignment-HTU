@@ -1,0 +1,120 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f9f9f9;
+  }
+
+  /* .transition-hover {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+  .transition-hover:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  }
+   */
+  
+   .post-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(8px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .post-card:hover {
+    transform: scale(1.015);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.25);
+  }
+  
+.post-card h5 {
+    background: linear-gradient(to right, #6c5ce7, #3d5afe, #00bcd4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+  }
+  
+  
+  .post-card p {
+    color: #444444; 
+  }
+  
+
+  .post-card p.text-muted {
+    color: #666666 !important; 
+  }
+  
+  
+  .post-card strong {
+    color: #333333; 
+  }
+  
+ 
+  .post-card a.text-dark {
+    color: #555 !important;
+    transition: color 0.3s ease;
+  }
+  
+  .post-card a.text-dark:hover {
+    color: #a174ff !important; 
+  }
+  
+  
+ 
+  .text-truncate-3 {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+  }
+  
+  .hero {
+    position: relative;
+    height: 100vh;
+    background: url('img.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1rem;
+  }
+  
+  .hero .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+  }
+  
+  .gradient-text {
+    background: linear-gradient(to right, #6c5ce7, #3d5afe, #00bcd4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .btn-gradient {
+    background: linear-gradient(to right, #6c5ce7, #3d5afe, #00bcd4);
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    padding: 0.75rem 1.5rem;
+    transition: transform 0.3s, filter 0.3s;
+  }
+  
+  .btn-gradient:hover {
+    filter: brightness(1.1);
+    transform: translateY(-2px);
+  }
+  
+  .btn-outline-gradient {
+    border: 2px solid transparent;
+    border-image-source: linear-gradient(to right, #6c5ce7, #00bcd4);
+    border-image-slice: 1;
+    background: none;
+    color: #6c5ce7;
+    padding: 5px;
+    transition: background 0.3s, color 0.3s, transform 0.3s;
+  }
+  
+  .btn-outline-gradient:hover {
+    background: linear-gradient(to right, #6c5ce7, #00bcd4);
+    color: #fff;
+    border-color: transparent;
+  }
+  
