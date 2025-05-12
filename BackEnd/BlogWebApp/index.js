@@ -24,9 +24,7 @@ class Post {
     this.title = title;
     this.content = content;
     // Avatar image URL is generated based on the post title
-    this.imageUrl = `https://ui-avatars.com/api/?name=${encodeURIComponent(
-      title
-    )}&background=6c757d&color=fff&rounded=true&size=60`;
+    this.imageUrl = `https://ui-avatars.com/api/?name=${encodeURIComponent(title)}&background=6c757d&color=fff&rounded=true&size=60`;
   }
 }
  
