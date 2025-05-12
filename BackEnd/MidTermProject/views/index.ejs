@@ -1,0 +1,150 @@
+<!-- header -->
+<%- include("partials/header") %>
+<!--  end    header -->
+
+<!-- main -->
+    <!--               Tab 1  form     add user          -->
+    <div class=" tab-content active" id="add-user-tab"  >
+<section class="min-vh-100  d-flex align-items-center">
+  <div class="container-xxl py-3">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-12 col-sm-11 col-md-10 col-lg-9 col-xl-9 col-xxl-10">
+        <div class="card shadow-lg border-0">
+          <div class="row g-0">
+          <!--               image           -->
+            <div class="col-md-6 d-none d-md-block">
+              <img src="/form.png"
+                   alt="Sample" class="img-fluid h-100" style="object-fit: cover;">
+            </div>
+
+            <!--            form             -->
+            <div class="col-12 col-md-6">
+              <div class="card-body p-3 p-md-4 text-black">
+                <h3 class="text-center text-uppercase mb-4 text-secondary" style="font-family: 'Segoe UI', sans-serif;">
+                  Add User</h3>
+
+                <form id="userForm" onsubmit="return addUser(event)">
+                  
+                  <div class="mb-2 input-group">
+                    <span class="input-group-text bg-white"><i class="fas fa-user"></i></span>
+                    <input type="text" id="name" class="form-control" placeholder="Enter name">
+                  </div>
+                  <div id="nameAlert" class=" mb-2 text-danger  d-none small" ></div>
+
+                  <div class="mb-2 input-group">
+                    <span class="input-group-text bg-white"><i class="fas fa-envelope"></i></span>
+                    <input type="email" id="email" class="form-control" placeholder="Enter email">
+                  </div>
+                  <div id="emailAlert" class="mb-2 text-danger   d-none small" ></div>
+
+                  <div class="mb-2 input-group">
+                    <span class="input-group-text bg-white"><i class="fas fa-phone"></i></span>
+                    <input type="tel" id="phonenum" class="form-control" placeholder="Enter phone number">
+                  </div>
+                  <div id="phonenumAlert" class="mb-2text-danger  d-none small" ></div>
+
+                  <div class="mb-2 input-group">
+                    <span class="input-group-text bg-white"><i class="fas fa-venus-mars"></i></span>
+                    <select id="gender" class="form-control">
+                      <option value="">Select your gender</option>
+                      <option value="Male">Male</option>
+                      <option value="Female">Female</option>
+                      <option value="Other">Other</option>
+                    </select>
+                  </div>
+                  <div id="genderAlert" class="mb-2 text-danger   d-none small" ></div>
+
+                  <div class="mb-2 input-group">
+                    <span class="input-group-text bg-white"><i class="fas fa-map-marker-alt"></i></span>
+                    <textarea id="address" class="form-control" rows="3" placeholder="Enter address"></textarea>
+                  </div>
+                  <div id="addressAlert" class="mb-2 text-danger   d-none small"></div>
+
+                  <div class="d-grid mt-2">
+                    <button type="submit" class="btn  btn-custom btn-md">Add User</button>
+                  </div>
+                </form>
+                  <!--     end        form             -->
+                <!-- successMessage-->
+                <div id="successMessage" class="text-center text-success mt-1 d-none">
+                  <p class="mb-0">The user has been added successfully!</p>
+                </div>
+              </div>
+            </div>
+          </div> 
+        </div> 
+      </div> 
+    </div> 
+  </div> 
+</section>
+    </div>
+    <!--       end        Tab 1  form    add user      -->
+    
+
+
+    <!--               Tab 2  table and card   previewusers      -->
+    <div class="tab-content" id="preview-users-tab">
+      <!--          toggle btn           -->
+      <div class="text-end mb-3 text-center">
+        <button class="btn btn-custom" onclick="toggleView(this)">View as Cards</button>
+      </div>
+       
+
+       <!--          table   view         -->
+       <section class="min-vh-100 d-flex" id="tableView">
+        <div class="container container-xxl py-3">
+          <div class="row justify-content-center align-items-center">
+            <div class="col-12 col-sm-11 col-md-10 col-lg-9 col-xl-9 col-xxl-12 table-responsive">
+              <table class="table table-hover align-middle bg-white custom-table w-100 py-5" id="table">
+                <thead class="table-light">
+                  <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Phone Number</th>
+                    <th scope="col">Gender</th>
+                    <th scope="col">Address</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <!-- table row will be generated here -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      <!--     end      table   view         -->
+  
+
+         
+
+    <!--     card  view         -->
+  <section class="min-vh-100 d-flex  d-none" id="cardView">
+    <div class="container py-5">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-12">
+          <div class="row g-4 card-container">
+            <!-- Cards will be generated here -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+      <!--   end   card  view         -->
+     
+    </div>
+      
+      <!--      end         Tab 2  table and card   previewusers      -->
+      
+
+    
+  
+    <!-- end     main -->
+
+
+
+
+<!-- footer -->
+<%- include("partials/footer.ejs") %>
+<!-- footer -->
