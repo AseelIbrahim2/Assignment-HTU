@@ -1,0 +1,68 @@
+
+<!-- header -->
+<%- include("partials/header") %>
+<!--  end    header -->
+
+<!-- main -->
+
+<!-- Hero Section -->
+<section class="hero d-flex align-items-center justify-content-center position-relative text-center text-white py-5 py-md-7">
+  <div class="overlay position-absolute top-0 start-0 w-100 h-100"></div>
+
+  <div class="container position-relative z-2 px-3 px-md-5">
+    <h1 class="fw-bold display-5 display-md-3 mb-3">Welcome to My Space 🌌</h1>
+    <p class="lead mb-4 fs-6 fs-md-5">
+      Discover a space for creativity, reflection, and self-growth. Dive into my world of thoughts, ideas, and experiences that shape the journey of life.
+    </p>
+    <a href="#blog" class="btn btn-gradient btn-lg px-4 py-2">Explore Blog</a>
+  </div>
+</section>
+
+<section class="post-preview container my-5 px-3 px-md-5 vh-100" id="blog">
+  <!-- Blog Header -->
+  <div class="d-flex flex-column flex-md-row justify-content-between align-items-start align-items-md-center gap-3 mb-4 text-center text-md-start">
+    <h1 class="fw-bold gradient-text">My Space Blog</h1>
+    <a href="/create" class="btn btn-gradient">
+      <i class="fas fa-plus me-1"></i> Create New Post
+    </a>
+  </div>
+
+<!-- Single Post -->
+<% posts.forEach(post => { %>
+  <div 
+    class="post-card row align-items-center p-4 rounded shadow-sm mb-4 mx-0 mx-md-1 hover-transition"
+    style="cursor: pointer;" 
+    onclick="window.location.href='/posts/<%= post.id %>'"
+  >
+    <div class="col-12 col-md-3 text-center mb-3 mb-md-0">
+      <img 
+        src="<%= post.imageUrl || '/path/to/default/image.jpg' %>" 
+        class="img-fluid rounded-circle shadow"
+        alt="Post Image" 
+        style="width:100px;height:100px;object-fit:cover"
+      >
+    </div>
+    <div class="col-12 col-md-9 text-center text-md-start">
+      <h5 class="mb-2 gradient-text"><%= post.title %></h5>
+      <p class="text-muted mb-3"><%= post.content.length > 100 ? post.content.substring(0, 100) + '...' : post.content %></p>
+      <div>
+        <a href="#" class="text-dark me-2"><i class="fab fa-facebook-f"></i></a>
+        <a href="#" class="text-dark me-2"><i class="fab fa-twitter"></i></a>
+        <a href="#" class="text-dark"><i class="fab fa-linkedin"></i></a>
+      </div>
+    </div>
+  </div>
+<% }) %>
+
+
+</section>
+
+<!-- end     main -->
+
+
+
+
+
+<!-- footer -->
+<%- include("partials/footer.ejs") %>
+<!-- footer -->
