@@ -1,0 +1,38 @@
+.card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 12px;
+  background-color: #fdfdfd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.name {
+  margin: 0;
+  color: #222;
+}
+
+.grade {
+  margin: 5px 0;
+}
+
+.badge {
+  display: inline-block;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-size: 14px;
+  font-weight: 600;
+  color: white;
+  margin-top: 8px;
+}
+
+.excellent {
+  background-color: #4caf50;
+}
+
+.needs {
+  background-color: #f44336;
+}
+
+.buttonWrapper {
+  margin-top: 10px;
+}
